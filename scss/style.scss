@@ -1,4 +1,6 @@
 @import "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;600;700&family=Roboto+Mono:wght@100;400&display=swap');
+
 html {
   box-sizing: border-box;
 }
@@ -7,4 +9,8 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+}
+
+body{
+    font-family: "Nunito", sans-serif;
 }
