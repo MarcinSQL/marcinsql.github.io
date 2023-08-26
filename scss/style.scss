@@ -34,3 +34,10 @@ body{
     background-color: $white;
     color: $text-text-default;
 }
+
+a{
+  text-decoration: none;
+}
+
+@import 'modules/_header.scss';
+@import 'modules/_main.scss';

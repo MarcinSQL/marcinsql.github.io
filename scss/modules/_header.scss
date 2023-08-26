@@ -1,0 +1,34 @@
+.header{
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    padding: 0 10rem;
+    font-size: 1.3rem;
+    background-color: $blue-light;
+
+    &__logo{
+        font-weight: 700;
+        color: $text-text-dark;
+    }
+
+    &__navigation{
+        &__list{
+            &__item{
+                display: inline-block;
+                &__link{
+                    font-weight: 700;
+                    color: $text-text-dark;
+                    margin: 0 16px;
+                    padding: 10px;
+                    transition: color .3s ease-in-out;
+                    &:hover{
+                        color: $text-link;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -14,4 +14,41 @@ body {
   font-family: "Nunito", sans-serif;
   background-color: #FFFFFF;
   color: #425A70;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  padding: 0 10rem;
+  font-size: 1.3rem;
+  background-color: #DBEAF7;
+}
+.header__logo {
+  font-weight: 700;
+  color: #234361;
+}
+.header__navigation__list__item {
+  display: inline-block;
+}
+.header__navigation__list__item__link {
+  font-weight: 700;
+  color: #234361;
+  margin: 0 16px;
+  padding: 10px;
+  transition: color 0.3s ease-in-out;
+}
+.header__navigation__list__item__link:hover {
+  color: #4DA8FF;
+}
+
+.main {
+  padding-top: 70px;
 }/*# sourceMappingURL=style.css.map */
