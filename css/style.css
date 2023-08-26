@@ -64,7 +64,7 @@ a {
   background-color: #dbeaf7;
   height: 70vh;
   background-image: url("../../img/undraw_programming_re_kg9v (1).svg");
-  background-position: right;
+  background-position: 90%;
   background-size: 50%;
   background-repeat: no-repeat;
   border-radius: 0 0 50px 50px;
@@ -74,4 +74,37 @@ a {
   top: 20vh;
   left: 10vw;
   width: 30%;
+}
+.welcome__container__heading {
+  font-size: 2.5rem;
+  margin: 0;
+  color: #234361;
+}
+.welcome__container__speach {
+  font-size: 1.1rem;
+  margin: 1.5rem 0;
+}
+.welcome__container__speach__bolder-word {
+  color: #1070ca;
+}
+.welcome__container__contact-button {
+  display: flex;
+  align-items: center;
+  line-height: 0.5;
+  gap: 10px;
+  background-color: #1070ca;
+  border: none;
+  color: #f6f9fd;
+  border-radius: 16px;
+  padding: 1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  transition: all 0.3s ease-in-out;
+}
+.welcome__container__contact-button:hover {
+  background-color: #234361;
+}
+.welcome__container__contact-button:hover img {
+  transition: all 0.5s ease-in-out;
+  transform: rotate(-360deg);
 }/*# sourceMappingURL=style.css.map */
