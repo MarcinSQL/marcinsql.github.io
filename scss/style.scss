@@ -15,7 +15,7 @@ $console-text-link: #14B5D0;
 $green: #06C847;
 $text-link: #4DA8FF;
 $text-text-dark: #234361;
-$text-text-deafult: #425A70;
+$text-text-default: #425A70;
 $text-text-muted: #66788A;
 $white: #FFFFFF;
 
@@ -31,4 +31,6 @@ html {
 
 body{
     font-family: "Nunito", sans-serif;
+    background-color: $white;
+    color: $text-text-default;
 }
