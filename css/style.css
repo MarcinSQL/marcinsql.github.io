@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;600;700&family=Roboto+Mono:wght@100;400&display=swap");
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -12,8 +13,12 @@ html {
 
 body {
   font-family: "Nunito", sans-serif;
-  background-color: #FFFFFF;
-  color: #425A70;
+  background-color: #ffffff;
+  color: #425a70;
+}
+
+section {
+  scroll-margin-top: 70px;
 }
 
 a {
@@ -29,7 +34,8 @@ a {
   height: 70px;
   padding: 0 10rem;
   font-size: 1.3rem;
-  background-color: #DBEAF7;
+  background-color: #dbeaf7;
+  z-index: 2;
 }
 .header__logo {
   font-weight: 700;
@@ -46,9 +52,26 @@ a {
   transition: color 0.3s ease-in-out;
 }
 .header__navigation__list__item__link:hover {
-  color: #4DA8FF;
+  color: #4da8ff;
 }
 
 .main {
   padding-top: 70px;
+}
+
+.welcome {
+  position: relative;
+  background-color: #dbeaf7;
+  height: 70vh;
+  background-image: url("../../img/undraw_programming_re_kg9v (1).svg");
+  background-position: right;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  border-radius: 0 0 50px 50px;
+}
+.welcome__container {
+  position: absolute;
+  top: 20vh;
+  left: 10vw;
+  width: 30%;
 }/*# sourceMappingURL=style.css.map */
