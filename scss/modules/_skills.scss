@@ -1,0 +1,54 @@
+.skills {
+  height: 80vh;
+  text-align: center;
+  &__heading {
+    font-size: 2rem;
+    margin: 5rem 0;
+  }
+  &__container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 100%;
+    line-height: 2;
+
+    & div {
+      padding: 3rem;
+      background-color: $blue;
+      color: $white;
+      backdrop-filter: blur(5px);
+      border-radius: 16px;
+    }
+
+    &__working-knowledge {
+      &__img {
+        width: 50px;
+      }
+      &__list {
+        font-weight: 100;
+        text-align: left;
+        list-style-image: url("../../img/small-tick-checked.svg");
+      }
+    }
+    &__know-something-about {
+      &__img {
+        width: 40px;
+      }
+      &__list {
+        font-weight: 100;
+        text-align: left;
+        list-style-image: url("../../img/small-tick.svg");
+      }
+    }
+    &__want-to-learn {
+      &__img {
+        width: 50px;
+      }
+      &__list {
+        font-weight: 100;
+        text-align: left;
+        list-style-type: disc;
+      }
+    }
+  }
+}
