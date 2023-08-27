@@ -1,7 +1,7 @@
 .skills {
-  height: 80vh;
+  min-height: 80vh;
   text-align: center;
-  
+
   &__container {
     display: flex;
     justify-content: space-evenly;

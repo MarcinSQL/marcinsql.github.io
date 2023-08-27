@@ -40,9 +40,11 @@ body {
 
 section {
   scroll-margin-top: $header-high;
+  padding-top: 5rem;
   h2 {
     font-size: 2rem;
-    margin: 5rem 0;
+    margin: 0;
+    padding-bottom: 5rem;
     text-align: center;
   }
 }

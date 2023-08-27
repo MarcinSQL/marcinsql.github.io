@@ -19,10 +19,12 @@ body {
 
 section {
   scroll-margin-top: 70px;
+  padding-top: 5rem;
 }
 section h2 {
   font-size: 2rem;
-  margin: 5rem 0;
+  margin: 0;
+  padding-bottom: 5rem;
   text-align: center;
 }
 
@@ -115,7 +117,7 @@ a {
 }
 
 .skills {
-  height: 80vh;
+  min-height: 80vh;
   text-align: center;
 }
 .skills__container {
@@ -161,7 +163,7 @@ a {
 .projects {
   background-color: #f6f9fd;
   min-height: 80vh;
-  margin-top: 3rem;
+  margin-top: 5rem;
   padding: 5rem 0;
 }
 .projects__heading {
