@@ -1,10 +1,7 @@
 .skills {
   height: 80vh;
   text-align: center;
-  &__heading {
-    font-size: 2rem;
-    margin: 5rem 0;
-  }
+  
   &__container {
     display: flex;
     justify-content: space-evenly;

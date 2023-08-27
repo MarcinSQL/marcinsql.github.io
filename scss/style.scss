@@ -40,6 +40,11 @@ body {
 
 section {
   scroll-margin-top: $header-high;
+
+  h2 {
+    font-size: 2rem;
+    margin: 5rem 0;
+  }
 }
 
 a {
