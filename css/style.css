@@ -134,6 +134,10 @@ a {
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
   border-radius: 16px;
+  transition: all 0.3s ease-in-out;
+}
+.skills__container div:hover {
+  transform: scale(1.1);
 }
 .skills__container__working-knowledge__img {
   width: 50px;
