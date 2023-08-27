@@ -1,5 +1,5 @@
 @import "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css";
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;600;700&family=Roboto+Mono:wght@100;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;600;700&family=Roboto+Mono:wght@300;400&display=swap");
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -156,4 +156,78 @@ a {
   font-weight: 100;
   text-align: left;
   list-style-type: disc;
+}
+
+.projects {
+  background-color: #f6f9fd;
+  min-height: 80vh;
+  margin-top: 3rem;
+  padding: 5rem 0;
+}
+.projects__heading {
+  margin: 0;
+  padding-bottom: 3rem;
+}
+.projects__speach {
+  text-align: center;
+}
+.projects__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 80%;
+  margin: 0 auto;
+}
+.projects__container__project {
+  margin: 0 auto;
+  margin-top: 5rem;
+  position: relative;
+  background-color: #212528;
+  font-family: "Roboto Mono", sans-serif;
+  font-weight: 300;
+  color: #808082;
+  border-radius: 16px;
+  width: 80%;
+}
+.projects__container__project__window {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  gap: 10px;
+  background-color: #1e1e1e;
+  width: 100%;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+.projects__container__project__window__circle {
+  display: block;
+  background-color: #464a4d;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.projects__container__project__img {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+}
+.projects__container__project__container {
+  padding: 4rem 2rem;
+}
+.projects__container__project__container__title {
+  display: grid;
+  grid-template-columns: 30% 1fr;
+  gap: 0.5rem;
+  color: #808082;
+}
+.projects__container__project__container__title__label {
+  text-align: right;
+}
+.projects__container__project__container__title__value--title {
+  color: #ffffff;
+}
+.projects__container__project__container__title__value--description {
+  color: #a3a3a3;
+}
+.projects__container__project__container__title__value--link {
+  color: #14b5d0;
 }/*# sourceMappingURL=style.css.map */

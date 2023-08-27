@@ -1,0 +1,75 @@
+.projects{
+    background-color: $blue-lightest;
+    min-height: 80vh;
+    margin-top: 3rem;
+    padding: 5rem 0;
+    &__heading{
+        margin: 0;
+        padding-bottom: 3rem;
+    }
+    &__speach{
+        text-align: center;
+    }
+    &__container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 80%;
+        margin: 0 auto;
+        &__project{
+            margin: 0 auto;
+            margin-top: 5rem;
+            position: relative;
+            background-color: $console-grey2;
+            font-family: "Roboto Mono", sans-serif;
+            font-weight: 300;
+            color: $conosle-grey4;
+            border-radius: 16px;
+            width: 80%;
+            &__window{
+                display: flex;
+                align-items: center;
+                padding: 16px;
+                gap: 10px;
+                background-color: $console-grey1;
+                width: 100%;
+                border-top-left-radius: 16px;
+                border-top-right-radius: 16px;
+                &__circle{
+                    display: block;
+                    background-color: $console-grey3;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                }
+            }
+            &__img{
+                position: absolute;
+                top: 20%;
+                left: 10%;
+            }
+            &__container{
+                padding: 4rem 2rem;
+                &__title{
+                    display: grid;
+                    grid-template-columns: 30% 1fr;
+                    gap: .5rem;
+                    color: $conosle-grey4;
+                    &__label{
+                        text-align: right;
+                    }
+                    &__value{
+                        &--title{
+                            color: $white;
+                        }
+                        &--description{
+                            color: $console-grey5;
+                        }
+                        &--link{
+                            color: $console-text-link;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
