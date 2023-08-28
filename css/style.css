@@ -264,6 +264,26 @@ a {
   transform: rotate(-360deg);
 }
 
+@media screen and (max-width: 530px) {
+  .welcome {
+    background-image: none;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+  .welcome__container {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    width: 100%;
+    position: static;
+    padding: 2rem;
+    text-align: center;
+  }
+  .welcome__container__contact-button {
+    margin: 3rem auto;
+  }
+}
 .skills {
   min-height: 80vh;
   text-align: center;
