@@ -19,7 +19,7 @@ body {
 
 section {
   scroll-margin-top: 69px;
-  padding-top: 5rem;
+  padding: 5rem 2rem;
 }
 section h2 {
   font-size: 2rem;
@@ -277,7 +277,6 @@ a {
     flex-direction: column;
     width: 100%;
     position: static;
-    padding: 2rem;
     text-align: center;
   }
   .welcome__container__contact-button {
@@ -332,6 +331,16 @@ a {
   list-style-type: disc;
 }
 
+@media screen and (max-width: 768px) {
+  .skills__container {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+  }
+  .skills__container div {
+    margin-bottom: 5rem;
+  }
+}
 .projects {
   background-color: #f6f9fd;
   min-height: 80vh;
