@@ -16,11 +16,16 @@
       list-style: none;
       gap: 2rem;
       &__item {
-        padding: 1rem;
+        padding: .5rem;
         background-color: $blue-lightest;
         box-shadow: 0 0 25px $box-shadow;
         border-radius: 50%;
+        transition: all .3s ease-in-out;
+        &:hover{
+          background-color: $blue;
+        }
         &__link img{
+          padding: .5rem;
             display: flex;
             align-items: center;
             transform: scale(1.8);
@@ -32,6 +37,10 @@
       background-color: $text-link;
       border-radius: 25px;
       color: $white;
+      transition: all .3s ease-in-out;
+      &:hover{
+        background-color: $blue;
+      }
     }
   }
 }

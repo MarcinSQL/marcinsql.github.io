@@ -398,6 +398,10 @@ a {
   position: absolute;
   top: 20%;
   left: 10%;
+  transition: all 0.3s ease-in-out;
+}
+.projects__container__project__img:hover {
+  transform: scale(1.5);
 }
 .projects__container__project__container {
   padding: 4rem 2rem;
@@ -467,12 +471,17 @@ a {
   gap: 2rem;
 }
 .contact__container__list__item {
-  padding: 1rem;
+  padding: 0.5rem;
   background-color: #f6f9fd;
   box-shadow: 0 0 25px #c9c9c9;
   border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+.contact__container__list__item:hover {
+  background-color: #1070ca;
 }
 .contact__container__list__item__link img {
+  padding: 0.5rem;
   display: flex;
   align-items: center;
   transform: scale(1.8);
@@ -482,6 +491,10 @@ a {
   background-color: #4da8ff;
   border-radius: 25px;
   color: #ffffff;
+  transition: all 0.3s ease-in-out;
+}
+.contact__container__mail-link:hover {
+  background-color: #1070ca;
 }
 
 @media screen and (max-width: 768px) {

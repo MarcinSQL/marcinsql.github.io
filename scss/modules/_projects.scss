@@ -46,6 +46,10 @@
                 position: absolute;
                 top: 20%;
                 left: 10%;
+                transition: all .3s ease-in-out;
+                &:hover{
+                    transform: scale(1.5);
+                }
             }
             &__container{
                 padding: 4rem 2rem;
