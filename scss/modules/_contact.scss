@@ -35,3 +35,18 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+    .contact{
+        &__container{
+            margin: 5rem 0 0 0;
+            flex-wrap: wrap;
+            &__list{
+                width: 100%;
+                margin-bottom: 5rem;
+                padding: 0;
+                justify-content: center;
+            }
+        }
+    }
+}
