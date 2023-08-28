@@ -245,7 +245,7 @@ a {
   text-align: center;
 }
 .contact__container {
-  margin-top: 5rem;
+  margin: 5rem 0;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
