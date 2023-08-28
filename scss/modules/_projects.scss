@@ -13,7 +13,7 @@
     &__container{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        width: 80%;
+        width: 100%;
         margin: 0 auto;
         &__project{
             margin: 0 auto;
@@ -51,7 +51,7 @@
                 padding: 4rem 2rem;
                 &__title{
                     display: grid;
-                    grid-template-columns: 30% 1fr;
+                    grid-template-columns: 1fr 3fr;
                     gap: .5rem;
                     color: $conosle-grey4;
                     &__label{
@@ -63,11 +63,45 @@
                         }
                         &--description{
                             color: $console-grey5;
+                            margin-bottom: 2rem;
                         }
                         &--link{
                             color: $console-text-link;
                             text-decoration: underline;
                         }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .projects{
+        margin-top: 0;
+        &__container{
+            grid-template-columns: 1fr;
+            &__project{
+                width: 80%;
+                &__container{
+                    padding: 4rem 1rem;
+                    &__title{
+                        grid-template-columns: 1fr 2fr;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .projects{
+        &__container{
+            &__project{
+                width: 100%;
+                &__container{
+                    &__title{
+                        grid-template-columns: 1fr 1fr;
                     }
                 }
             }
