@@ -58,11 +58,20 @@
   .skills{
     &__container {
       display: block;
-      width: 60%;
+      width: 80%;
       margin: 0 auto;
       & div {
+        padding: 2rem;
         margin-bottom: 5rem;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .skills{
+    &__container {
+      width: 100%;
     }
   }
 }

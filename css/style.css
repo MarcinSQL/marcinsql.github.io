@@ -334,11 +334,17 @@ a {
 @media screen and (max-width: 1024px) {
   .skills__container {
     display: block;
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
   }
   .skills__container div {
+    padding: 2rem;
     margin-bottom: 5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .skills__container {
+    width: 100%;
   }
 }
 .projects {
@@ -497,4 +503,6 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  padding: 0 2rem;
 }/*# sourceMappingURL=style.css.map */
