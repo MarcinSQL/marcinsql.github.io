@@ -238,6 +238,7 @@ a {
 }
 .projects__container__project__container__title__value--link {
   color: #14b5d0;
+  text-decoration: underline;
 }
 
 .contact__heading {

@@ -11,7 +11,7 @@ fetch("https://api.github.com/users/MarcinSQL/repos?sort=created")
               <span class="projects__container__project__window__circle"></span>
               <span class="projects__container__project__window__circle"></span>
             </div>
-            <a href="https://github.com/MarcinSQL">
+            <a href="https://github.com/MarcinSQL" target="_blank">
               <img
                 class="projects__container__project__img"
                 src="img/Github-Icon.svg"
