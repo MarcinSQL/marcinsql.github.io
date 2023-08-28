@@ -56,6 +56,7 @@ fetch("https://api.github.com/users/MarcinSQL/repos?sort=created")
                     class="projects__container__project__container__title__value--link"
                     href="${homepage}"
                     title="${name} - demo."
+                    target="_blank"
                     >see here</a
                   >&gt;</span
                 >
@@ -69,6 +70,7 @@ fetch("https://api.github.com/users/MarcinSQL/repos?sort=created")
                     class="projects__container__project__container__title__value--link"
                     href="${html_url}"
                     title="${name} - source code."
+                    target="_blank"
                     >source code</a
                   >&gt;</span
                 >
