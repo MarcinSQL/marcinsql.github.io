@@ -1,10 +1,20 @@
+const navBtn = document.querySelector(".hamburger");
+const navToggle = document.querySelector(".header__navigation--js");
+
+const handleNav = () => {
+  navBtn.classList.toggle("is-active");
+  navToggle.classList.toggle("header__navigation--mobile");
+};
+
+navBtn.addEventListener("click", handleNav);
+
 fetch("https://api.github.com/users/MarcinSQL/repos?sort=created")
   .then((resp) => resp.json())
   .then((resp) => {
-    for(let repo of resp){
-        const {name, description, homepage, html_url} = repo;
-        const repositoryList = document.querySelector('.projects__container--js');
-        const myTemplate = `
+    for (let repo of resp) {
+      const { name, description, homepage, html_url } = repo;
+      const repositoryList = document.querySelector(".projects__container--js");
+      const myTemplate = `
         <article class="projects__container__project">
             <div class="projects__container__project__window">
               <span class="projects__container__project__window__circle"></span>
@@ -66,10 +76,13 @@ fetch("https://api.github.com/users/MarcinSQL/repos?sort=created")
             </div>
           </article>
         `;
-        if(description && (name !== 'Java' &&  name !== 'marcinsql.github.io')){
-            repositoryList.innerHTML += myTemplate;
-        }
+      if (description && name !== "Java" && name !== "marcinsql.github.io") {
+        repositoryList.innerHTML += myTemplate;
+      }
     }
-  }).catch((error) => {
-    console.log(`Repositories can not be download to website. Error code: ${error}`);
   })
+  .catch((error) => {
+    console.log(
+      `Repositories can not be download to website. Error code: ${error}`
+    );
+  });

@@ -1,35 +1,74 @@
-.header{
-    position: fixed;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    height: $header-high;
-    padding: 0 10rem;
-    font-size: 1.3rem;
-    background-color: $blue-light;
-    z-index: 2;
+.header {
+  position: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 0.5rem 0;
+  font-size: 1.3rem;
+  background-color: $blue-light;
+  z-index: 2;
 
-    &__logo{
-        font-weight: 700;
-        color: $text-text-dark;
-    }
+  &__logo {
+    font-weight: 700;
+    color: $text-text-dark;
+  }
 
-    &__navigation{
-        &__list{
-            &__item{
-                display: inline-block;
-                &__link{
-                    font-weight: 700;
-                    color: $text-text-dark;
-                    margin: 0 16px;
-                    padding: 10px;
-                    transition: color .3s ease-in-out;
-                    &:hover{
-                        color: $text-link;
-                    }
-                }
-            }
+  .hamburger {
+    display: none;
+  }
+
+  &__navigation {
+    &__list {
+      &__item {
+        display: inline-block;
+        &__link {
+          font-weight: 700;
+          color: $text-text-dark;
+          margin: 0 16px;
+          padding: 10px;
+          transition: color 0.3s ease-in-out;
+          &:hover {
+            color: $text-link;
+          }
         }
+      }
     }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    background-color: $blue;
+    color: $white;
+    padding: 0.5rem 0;
+    text-align: center;
+    &__logo {
+      color: $white;
+    }
+    .hamburger {
+      display: block;
+    }
+    &__navigation {
+      color: $white;
+      overflow: hidden;
+      max-height: 0;
+      width: 100%;
+      transition: max-height 0.5s ease-in-out;
+      &__list {
+        padding: 0;
+        &__item {
+          display: block;
+          margin: 1.5rem;
+          &__link {
+            color: $white;
+          }
+        }
+      }
+      &--mobile {
+        max-height: 100vh;
+      }
+    }
+  }
 }

@@ -8,9 +8,14 @@
   </head>
   <body>
     <header class="header">
-      <a class="header__logo" href="#welcome">mWasilewski</a>
-      <nav class="header__navigation">
-        <ul class="header__navigation__list">
+      <a class="header__logo" href="#welcome" aria-label="Logo">mWasilewski</a>
+      <button class="hamburger hamburger--spin" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+      <nav class="header__navigation header__navigation--js">
+        <ul class="header__navigation__list header__navigation__list--js">
           <li class="header__navigation__list__item">
             <a class="header__navigation__list__item__link" href="#skills"
               >Skills</a
@@ -194,17 +199,25 @@
         <div class="contact__container">
           <ul class="contact__container__list">
             <li class="contact__container__list__item">
-              <a class="contact__container__list__item__link" href="https://github.com/MarcinSQL"
+              <a
+                class="contact__container__list__item__link"
+                href="https://github.com/MarcinSQL"
+                target="_blank"
                 ><img src="img/Github.svg" alt="Github link."
               /></a>
             </li>
             <li class="contact__container__list__item">
-              <a class="contact__container__list__item__link" href="#"
-                ><img src="img/linkedin.svg" alt="Linkedin link." />
+              <a
+                class="contact__container__list__item__link"
+                href="#"
+                target="_blank"
+                ><img src="img/Linkedin.svg" alt="Linkedin link." />
               </a>
             </li>
           </ul>
-          <a class="contact__container__mail-link" href="mailto:marcin.wasilewski512@gmail.com"
+          <a
+            class="contact__container__mail-link"
+            href="mailto:marcin.wasilewski512@gmail.com"
             >marcin.wasilewski512@gmail.com</a
           >
         </div>
