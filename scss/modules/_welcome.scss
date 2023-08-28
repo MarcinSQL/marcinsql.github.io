@@ -27,6 +27,7 @@
         &__contact-button{
             display: flex;
             align-items: center;
+            width: fit-content;
             line-height: 0.5;
             gap: 10px;
             background-color: $blue;

@@ -97,6 +97,8 @@ a {
 .welcome__container__contact-button {
   display: flex;
   align-items: center;
+  width: -moz-fit-content;
+  width: fit-content;
   line-height: 0.5;
   gap: 10px;
   background-color: #1070ca;
