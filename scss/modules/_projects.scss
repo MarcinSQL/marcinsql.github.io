@@ -40,6 +40,15 @@
                     width: 10px;
                     height: 10px;
                     border-radius: 50%;
+                    &:first-of-type:hover{
+                        background-color: #FF605C;
+                    }
+                    &:nth-of-type(2):hover{
+                        background-color: #FFBD44;
+                    }
+                    &:last-of-type:hover{
+                        background-color: #00CA4E;
+                    }
                 }
             }
             &__img{

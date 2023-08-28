@@ -394,6 +394,15 @@ a {
   height: 10px;
   border-radius: 50%;
 }
+.projects__container__project__window__circle:first-of-type:hover {
+  background-color: #FF605C;
+}
+.projects__container__project__window__circle:nth-of-type(2):hover {
+  background-color: #FFBD44;
+}
+.projects__container__project__window__circle:last-of-type:hover {
+  background-color: #00CA4E;
+}
 .projects__container__project__img {
   position: absolute;
   top: 20%;
