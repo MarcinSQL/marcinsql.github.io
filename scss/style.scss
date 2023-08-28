@@ -18,6 +18,7 @@ $text-text-dark: #234361;
 $text-text-default: #425a70;
 $text-text-muted: #66788a;
 $white: #ffffff;
+$box-shadow: #c9c9c9;
 
 $header-high: 70px;
 
@@ -58,3 +59,4 @@ a {
 @import "modules/welcome";
 @import "modules/skills";
 @import "modules/projects";
+@import "modules/contact";

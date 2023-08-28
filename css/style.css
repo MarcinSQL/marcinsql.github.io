@@ -236,4 +236,40 @@ a {
 }
 .projects__container__project__container__title__value--link {
   color: #14b5d0;
+}
+
+.contact__heading {
+  padding-bottom: 3rem;
+}
+.contact__speach {
+  text-align: center;
+}
+.contact__container {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.contact__container__list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 2rem;
+}
+.contact__container__list__item {
+  padding: 1rem;
+  background-color: #f6f9fd;
+  box-shadow: 0 0 25px #c9c9c9;
+  border-radius: 50%;
+}
+.contact__container__list__item__link img {
+  display: flex;
+  align-items: center;
+  transform: scale(1.8);
+}
+.contact__container__mail-link {
+  padding: 1rem;
+  background-color: #4da8ff;
+  border-radius: 25px;
+  color: #ffffff;
 }/*# sourceMappingURL=style.css.map */
