@@ -1,6 +1,9 @@
 const navBtn = document.querySelector(".hamburger");
 const navToggle = document.querySelector(".header__navigation--js");
 
+document.getElementById("speach__current-year").innerHTML =
+  new Date().getFullYear();
+
 const handleNav = () => {
   navBtn.classList.toggle("is-active");
   navToggle.classList.toggle("header__navigation--mobile");
