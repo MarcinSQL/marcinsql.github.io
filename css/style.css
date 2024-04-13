@@ -306,26 +306,26 @@ a {
 .skills__container div:hover {
   transform: scale(1.1);
 }
-.skills__container__working-knowledge__img {
+.skills .working-knowledge__img {
   width: 50px;
 }
-.skills__container__working-knowledge__list {
+.skills .working-knowledge__list {
   font-weight: 100;
   text-align: left;
   list-style-image: url("../../img/small-tick-checked.svg");
 }
-.skills__container__know-something-about__img {
+.skills .know-something-about__img {
   width: 40px;
 }
-.skills__container__know-something-about__list {
+.skills .know-something-about__list {
   font-weight: 100;
   text-align: left;
   list-style-image: url("../../img/small-tick.svg");
 }
-.skills__container__want-to-learn__img {
+.skills .want-to-learn__img {
   width: 50px;
 }
-.skills__container__want-to-learn__list {
+.skills .want-to-learn__list {
   font-weight: 100;
   text-align: left;
   list-style-type: disc;

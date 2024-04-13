@@ -15,47 +15,47 @@
       color: $white;
       backdrop-filter: blur(5px);
       border-radius: 16px;
-      transition: all .3s ease-in-out;
-      &:hover{
+      transition: all 0.3s ease-in-out;
+      &:hover {
         transform: scale(1.1);
       }
     }
+  }
 
-    &__working-knowledge {
-      &__img {
-        width: 50px;
-      }
-      &__list {
-        font-weight: 100;
-        text-align: left;
-        list-style-image: url("../../img/small-tick-checked.svg");
-      }
+  .working-knowledge {
+    &__img {
+      width: 50px;
     }
-    &__know-something-about {
-      &__img {
-        width: 40px;
-      }
-      &__list {
-        font-weight: 100;
-        text-align: left;
-        list-style-image: url("../../img/small-tick.svg");
-      }
+    &__list {
+      font-weight: 100;
+      text-align: left;
+      list-style-image: url("../../img/small-tick-checked.svg");
     }
-    &__want-to-learn {
-      &__img {
-        width: 50px;
-      }
-      &__list {
-        font-weight: 100;
-        text-align: left;
-        list-style-type: disc;
-      }
+  }
+  .know-something-about {
+    &__img {
+      width: 40px;
+    }
+    &__list {
+      font-weight: 100;
+      text-align: left;
+      list-style-image: url("../../img/small-tick.svg");
+    }
+  }
+  .want-to-learn {
+    &__img {
+      width: 50px;
+    }
+    &__list {
+      font-weight: 100;
+      text-align: left;
+      list-style-type: disc;
     }
   }
 }
 
 @media screen and (max-width: 1024px) {
-  .skills{
+  .skills {
     &__container {
       display: block;
       width: 80%;
@@ -69,7 +69,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .skills{
+  .skills {
     &__container {
       width: 100%;
     }
