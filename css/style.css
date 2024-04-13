@@ -480,10 +480,10 @@ a {
   display: flex;
   align-items: center;
   list-style: none;
-  gap: 2rem;
   padding: 0;
 }
 .contact .list .list__item {
+  margin: 0 1rem;
   padding: 0.5rem;
   background-color: #f6f9fd;
   box-shadow: 0 0 25px #c9c9c9;
