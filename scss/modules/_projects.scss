@@ -108,15 +108,12 @@
 }
 
 @media screen and (max-width: 768px) {
-  .projects {
-    &__container {
-      &__project {
-        width: 100%;
-
-        &__title {
-          grid-template-columns: 1fr 1fr;
-        }
-      }
+  .project{
+    width: 100% !important;
+    &__title {
+        padding: 0 1rem;
+      display: block !important;
+      flex-direction: column;
     }
   }
 }

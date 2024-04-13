@@ -1,10 +1,11 @@
 .footer{
-    height: 20vh;
+    height: 15vh;
     background-color: $blue;
     color: $white;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    text-align: center;
     padding: 0 2rem;
 }

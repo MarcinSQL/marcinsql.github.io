@@ -455,11 +455,13 @@ a {
   }
 }
 @media screen and (max-width: 768px) {
-  .projects__container__project {
-    width: 100%;
+  .project {
+    width: 100% !important;
   }
-  .projects__container__project__title {
-    grid-template-columns: 1fr 1fr;
+  .project__title {
+    padding: 0 1rem;
+    display: block !important;
+    flex-direction: column;
   }
 }
 .contact__heading {
@@ -479,6 +481,7 @@ a {
   align-items: center;
   list-style: none;
   gap: 2rem;
+  padding: 0;
 }
 .contact .list .list__item {
   padding: 0.5rem;
@@ -520,12 +523,13 @@ a {
   }
 }
 .footer {
-  height: 20vh;
+  height: 15vh;
   background-color: #1070ca;
   color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  text-align: center;
   padding: 0 2rem;
 }/*# sourceMappingURL=style.css.map */
