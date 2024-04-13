@@ -366,7 +366,7 @@ a {
   width: 100%;
   margin: 0 auto;
 }
-.projects__container__project {
+.projects .project {
   margin: 0 auto;
   margin-top: 5rem;
   position: relative;
@@ -377,7 +377,7 @@ a {
   border-radius: 16px;
   width: 80%;
 }
-.projects__container__project__window {
+.projects .project__window {
   display: flex;
   align-items: center;
   padding: 16px;
@@ -387,51 +387,51 @@ a {
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
 }
-.projects__container__project__window__circle {
+.projects .project__window .window__circle {
   display: block;
   background-color: #464a4d;
   width: 10px;
   height: 10px;
   border-radius: 50%;
 }
-.projects__container__project__window__circle:first-of-type:hover {
-  background-color: #FF605C;
+.projects .project__window .window__circle:first-of-type:hover {
+  background-color: #ff605c;
 }
-.projects__container__project__window__circle:nth-of-type(2):hover {
-  background-color: #FFBD44;
+.projects .project__window .window__circle:nth-of-type(2):hover {
+  background-color: #ffbd44;
 }
-.projects__container__project__window__circle:last-of-type:hover {
-  background-color: #00CA4E;
+.projects .project__window .window__circle:last-of-type:hover {
+  background-color: #00ca4e;
 }
-.projects__container__project__img {
+.projects .project__img {
   position: absolute;
   top: 20%;
   left: 10%;
   transition: all 0.3s ease-in-out;
 }
-.projects__container__project__img:hover {
+.projects .project__img:hover {
   transform: scale(1.5);
 }
-.projects__container__project__container {
+.projects .project__container {
   padding: 4rem 2rem;
 }
-.projects__container__project__container__title {
+.projects .project__title {
   display: grid;
   grid-template-columns: 1fr 3fr;
   gap: 0.5rem;
   color: #808082;
 }
-.projects__container__project__container__title__label {
+.projects .project__title .title__label {
   text-align: right;
 }
-.projects__container__project__container__title__value--title {
+.projects .project__title .title__value--title {
   color: #ffffff;
 }
-.projects__container__project__container__title__value--description {
+.projects .project__title .title__value--description {
   color: #a3a3a3;
   margin-bottom: 2rem;
 }
-.projects__container__project__container__title__value--link {
+.projects .project__title .title__value--link {
   color: #14b5d0;
   text-decoration: underline;
 }
@@ -443,13 +443,13 @@ a {
   .projects__container {
     grid-template-columns: 1fr;
   }
-  .projects__container__project {
+  .projects .project {
     width: 80%;
   }
-  .projects__container__project__container {
+  .projects .project__container {
     padding: 4rem 1rem;
   }
-  .projects__container__project__container__title {
+  .projects .project__title {
     grid-template-columns: 1fr 2fr;
   }
 }
@@ -457,7 +457,7 @@ a {
   .projects__container__project {
     width: 100%;
   }
-  .projects__container__project__container__title {
+  .projects__container__project__title {
     grid-template-columns: 1fr 1fr;
   }
 }

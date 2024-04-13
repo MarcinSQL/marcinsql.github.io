@@ -15,45 +15,45 @@ fetch("https://api.github.com/users/MarcinSQL/repos?sort=created")
       const { name, description, homepage, html_url } = repo;
       const repositoryList = document.querySelector(".projects__container--js");
       const myTemplate = `
-        <article class="projects__container__project">
-            <div class="projects__container__project__window">
-              <span class="projects__container__project__window__circle"></span>
-              <span class="projects__container__project__window__circle"></span>
-              <span class="projects__container__project__window__circle"></span>
+        <article class="project">
+            <div class="project__window">
+              <span class="window__circle"></span>
+              <span class="window__circle"></span>
+              <span class="window__circle"></span>
             </div>
             <a href="https://github.com/MarcinSQL" target="_blank">
               <img
-                class="projects__container__project__img"
+                class="project__img"
                 src="img/Github-Icon.svg"
                 alt="Github icon."
               />
             </a>
-            <div class="projects__container__project__container">
-              <p class="projects__container__project__container__title">
+            <div class="project__container">
+              <p class="project__title">
                 <span
-                  class="projects__container__project__container__title__label"
+                  class="title__label"
                   >project:</span
                 ><span
-                  class="projects__container__project__container__title__value--title"
+                  class="title__value--title"
                   >${name}</span
                 >
               </p>
-              <p class="projects__container__project__container__title">
+              <p class="project__title">
                 <span
-                  class="projects__container__project__container__title__label"
+                  class="title__label"
                   >description:</span
                 ><span
-                  class="projects__container__project__container__title__value--description"
+                  class="title__value--description"
                   >${description}</span
                 >
               </p>
-              <p class="projects__container__project__container__title">
+              <p class="project__title">
                 <span
-                  class="projects__container__project__container__title__label"
+                  class="title__label"
                   >demo:</span
                 ><span
                   >&lt;<a
-                    class="projects__container__project__container__title__value--link"
+                    class="title__value--link"
                     href="${homepage}"
                     title="${name} - demo."
                     target="_blank"
@@ -61,13 +61,13 @@ fetch("https://api.github.com/users/MarcinSQL/repos?sort=created")
                   >&gt;</span
                 >
               </p>
-              <p class="projects__container__project__container__title">
+              <p class="project__title">
                 <span
-                  class="projects__container__project__container__title__label"
+                  class="title__label"
                   >github:</span
                 ><span
                   >&lt;<a
-                    class="projects__container__project__container__title__value--link"
+                    class="title__value--link"
                     href="${html_url}"
                     title="${name} - source code."
                     target="_blank"
