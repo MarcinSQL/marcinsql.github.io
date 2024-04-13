@@ -228,19 +228,19 @@ a {
   left: 10vw;
   width: 30%;
 }
-.welcome__container__heading {
+.welcome__heading {
   font-size: 2.5rem;
   margin: 0;
   color: #234361;
 }
-.welcome__container__speach {
+.welcome__speach {
   font-size: 1.1rem;
   margin: 1.5rem 0;
 }
-.welcome__container__speach__bolder-word {
+.welcome__speach .speach__bolder-word {
   color: #1070ca;
 }
-.welcome__container__contact-button {
+.welcome__contact-button {
   display: flex;
   align-items: center;
   width: -moz-fit-content;
@@ -256,10 +256,10 @@ a {
   letter-spacing: 1px;
   transition: all 0.3s ease-in-out;
 }
-.welcome__container__contact-button:hover {
+.welcome__contact-button:hover {
   background-color: #234361;
 }
-.welcome__container__contact-button:hover img {
+.welcome__contact-button:hover img {
   transition: all 0.5s ease-in-out;
   transform: rotate(-360deg);
 }
@@ -279,7 +279,7 @@ a {
     position: static;
     text-align: center;
   }
-  .welcome__container__contact-button {
+  .welcome__contact-button {
     margin: 3rem auto;
   }
 }

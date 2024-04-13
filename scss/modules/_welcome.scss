@@ -1,72 +1,73 @@
-.welcome{
-    position: relative;
-    background-color: $blue-light;
-    height: 70vh;
-    background-image: url('../../img/undraw_programming_re_kg9v\ \(1\).svg');
-    background-position: 90%;
-    background-size: 50%;
-    background-repeat: no-repeat;
-    border-radius: 0 0 50px 50px;
-    &__container{
-        position: absolute;
-        top: 20vh;
-        left: 10vw;
-        width: 30%;
-        &__heading{
-            font-size: 2.5rem;
-            margin: 0;
-            color: $text-text-dark;
-        }
-        &__speach{
-            font-size: 1.1rem;
-            margin: 1.5rem 0;
-            &__bolder-word{
-                color: $blue;
-            }
-        }
-        &__contact-button{
-            display: flex;
-            align-items: center;
-            width: fit-content;
-            line-height: 0.5;
-            gap: 10px;
-            background-color: $blue;
-            border: none;
-            color: $blue-lightest;
-            border-radius: 16px;
-            padding: 1rem;
-            font-weight: 700;
-            letter-spacing: 1px;
-            transition: all .3s ease-in-out;
-            &:hover{
-                background-color: $text-text-dark;
-               
-                & img{
-                    transition: all .5s ease-in-out;
-                    transform: rotate(-360deg);
-                }
-            }
-        }
-        
+.welcome {
+  position: relative;
+  background-color: $blue-light;
+  height: 70vh;
+  background-image: url("../../img/undraw_programming_re_kg9v\ \(1\).svg");
+  background-position: 90%;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  border-radius: 0 0 50px 50px;
+  &__container {
+    position: absolute;
+    top: 20vh;
+    left: 10vw;
+    width: 30%;
+  }
+
+  &__heading {
+    font-size: 2.5rem;
+    margin: 0;
+    color: $text-text-dark;
+  }
+  &__speach {
+    font-size: 1.1rem;
+    margin: 1.5rem 0;
+
+    .speach__bolder-word {
+      color: $blue;
     }
+  }
+  &__contact-button {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    line-height: 0.5;
+    gap: 10px;
+    background-color: $blue;
+    border: none;
+    color: $blue-lightest;
+    border-radius: 16px;
+    padding: 1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      background-color: $text-text-dark;
+
+      & img {
+        transition: all 0.5s ease-in-out;
+        transform: rotate(-360deg);
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 530px) {
-    .welcome{
-        background-image: none;
-        display: flex;
-        align-content: center;
-        flex-wrap: wrap;
-        &__container{
-            display: flex;
-            align-content: center;
-            flex-direction: column;
-            width: 100%;
-            position: static;
-            text-align: center;
-            &__contact-button{
-                margin: 3rem auto;
-            }
-        }
+  .welcome {
+    background-image: none;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    &__container {
+      display: flex;
+      align-content: center;
+      flex-direction: column;
+      width: 100%;
+      position: static;
+      text-align: center;
     }
+    &__contact-button {
+      margin: 3rem auto;
+    }
+  }
 }
