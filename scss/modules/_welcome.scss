@@ -54,10 +54,11 @@
 
 @media screen and (max-width: 530px) {
   .welcome {
-    background-image: none;
+    height: 70vh;
     display: flex;
     align-content: center;
-    flex-wrap: wrap;
+    background-position: center 85%;
+    background-size: 70%;
     &__container {
       display: flex;
       align-content: center;
@@ -67,7 +68,7 @@
       text-align: center;
     }
     &__contact-button {
-      margin: 3rem auto;
+      margin: 0 auto;
     }
   }
 }

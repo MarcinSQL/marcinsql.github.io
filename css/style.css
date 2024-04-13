@@ -266,10 +266,11 @@ a {
 
 @media screen and (max-width: 530px) {
   .welcome {
-    background-image: none;
+    height: 70vh;
     display: flex;
     align-content: center;
-    flex-wrap: wrap;
+    background-position: center 85%;
+    background-size: 70%;
   }
   .welcome__container {
     display: flex;
@@ -280,7 +281,7 @@ a {
     text-align: center;
   }
   .welcome__contact-button {
-    margin: 3rem auto;
+    margin: 0 auto;
   }
 }
 .skills {
