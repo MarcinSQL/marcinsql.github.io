@@ -1,3 +1,18 @@
+@keyframes slideIn {
+    from { transform: translateX(-100px); }
+    to   { transform: translateX(0); }
+}
+
+@keyframes backgroundSlideIn {
+    from { background-position: 110%; }
+    to   { background-position: 90%; }
+}
+
+@keyframes backgroundSlideIn--mobile {
+    from { background-position: 95% 85%; }
+    to   { background-position: center 85%; }
+}
+
 .welcome {
   position: relative;
   background-color: $blue-light;
@@ -7,11 +22,13 @@
   background-size: 50%;
   background-repeat: no-repeat;
   border-radius: 0 0 50px 50px;
+  animation: backgroundSlideIn 1s;
   &__container {
     position: absolute;
     top: 20vh;
     left: 10vw;
     width: 30%;
+    animation: slideIn 1s;
   }
 
   &__heading {
@@ -59,6 +76,7 @@
     align-content: center;
     background-position: center 85%;
     background-size: 70%;
+    animation: backgroundSlideIn--mobile 1s;
     &__container {
       display: flex;
       align-content: center;
@@ -66,6 +84,7 @@
       width: 100%;
       position: static;
       text-align: center;
+      animation: slideIn 1s;
     }
     &__contact-button {
       margin: 0 auto;
