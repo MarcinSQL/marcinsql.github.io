@@ -160,17 +160,17 @@ a {
 .header .hamburger {
   display: none;
 }
-.header__navigation__list__item {
+.header .list__item {
   display: inline-block;
 }
-.header__navigation__list__item__link {
+.header .list__link {
   font-weight: 700;
   color: #234361;
   margin: 0 16px;
   padding: 10px;
   transition: color 0.3s ease-in-out;
 }
-.header__navigation__list__item__link:hover {
+.header .list__link:hover {
   color: #4da8ff;
 }
 
@@ -194,18 +194,18 @@ a {
     width: 100%;
     transition: max-height 0.5s ease-in-out;
   }
-  .header__navigation__list {
+  .header__navigation--mobile {
+    max-height: 100vh;
+  }
+  .header .list {
     padding: 0;
   }
-  .header__navigation__list__item {
+  .header .list__item {
     display: block;
     margin: 1.5rem;
   }
-  .header__navigation__list__item__link {
+  .header .list__link {
     color: #ffffff;
-  }
-  .header__navigation--mobile {
-    max-height: 100vh;
   }
 }
 .main {
